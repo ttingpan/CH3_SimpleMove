@@ -21,10 +21,6 @@ ASimpleMove::ASimpleMove()
 void ASimpleMove::BeginPlay()
 {
 	Super::BeginPlay();
-	int x = 0;
-	int y = 0;
-	UE_LOG(LogTemp, Warning, TEXT("시작점 (%d,%d)"), x, y);
-
 	// 10회 이동
 	Move(10);
 }
