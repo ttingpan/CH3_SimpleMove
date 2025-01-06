@@ -22,6 +22,7 @@
 
 ![image](https://github.com/user-attachments/assets/f9f50e82-780b-450e-b041-4d71e0d52e20)
 
+***
 ### 도전 기능
 필수 기능 구현을 완료한 후 아래 기능을 추가 힙니다.
 
@@ -35,3 +36,8 @@
 이를 구현한다면 아래와 같은 클래스가 될 것 입니다.
 
 ![image](https://github.com/user-attachments/assets/5260e916-b573-4d14-88c7-b59a6224c5b4)
+
+***
+### 결과 미리보기
+![image](https://github.com/user-attachments/assets/a2121eb7-df2e-4b81-a755-f9dc12ad4a4d)
+
