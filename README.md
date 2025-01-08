@@ -39,5 +39,6 @@
 
 ***
 ### 결과 미리보기
-![image](https://github.com/user-attachments/assets/a2121eb7-df2e-4b81-a755-f9dc12ad4a4d)
+
+![image](https://github.com/user-attachments/assets/341396cb-59d1-476b-b05c-76bade43b035)
 
