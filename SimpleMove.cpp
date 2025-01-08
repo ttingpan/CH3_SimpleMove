@@ -59,8 +59,11 @@ void ASimpleMove::Move(const int& Count)
 		// 현재 이동한 거리 계산
 		float dist = Distance(FVector2d(startX, startY), start);
 
+		// 이동한 거리 출력
+		UE_LOG(LogTemp, Warning, TEXT("이동한 거리 : %.2f"), dist);
+
 		// 50% 확률로 이벤트 발생
-		CreateEvent(50.0f, dist);
+		CreateEvent(50.0f);
 	}
 
 	UE_LOG(LogTemp, Warning, TEXT("총 발생한 이벤트 횟수 : %d"), evCnt);
@@ -83,7 +86,7 @@ float ASimpleMove::Distance(const FVector2D& First, const FVector2D& Second)
 	return dist;
 }
 
-void ASimpleMove::CreateEvent(const float& Probability, const float& Dist)
+void ASimpleMove::CreateEvent(const float& Probability)
 {
 	int RandomValue = FMath::RandRange(1, 100); // 1 ~ 100의 난수 생성
 	if (RandomValue <= Probability) // 이벤트 발생
@@ -91,14 +94,9 @@ void ASimpleMove::CreateEvent(const float& Probability, const float& Dist)
 		// 총 이벤트 발생 횟수 증가
 		evCnt++;
 		UE_LOG(LogTemp, Warning, TEXT("이벤트가 발생 했습니다!"));
-
-		// 이동한 거리 출력
-		UE_LOG(LogTemp, Warning, TEXT("이동한 거리 : %.2f"), Dist);
 	}
 	else // 이벤트 미발생
 	{
 		UE_LOG(LogTemp, Warning, TEXT("이벤트가 발생하지 않았습니다."));
 	}
 }
-
-
