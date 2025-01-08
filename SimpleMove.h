@@ -42,5 +42,5 @@ public:
 
 	// 이벤트 발생
 	// Probability : 발생 확률
-	void CreateEvent(const float& Probability, const float& Dist);
+	void CreateEvent(const float& Probability);
 };
